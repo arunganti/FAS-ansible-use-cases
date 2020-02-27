@@ -39,9 +39,8 @@ This template will configure the F5 BIG-IP to provision the `WAF module <https:/
 
 .. note::
 
-   This Playbook detects if blocked URL or IP already exists and only add what is new (idempotency).
-
-
+   This Playbook modifies the provisioning of modules on the BIG-IP and will take some time to complete as the new module comes online. This Playbook detects if blocked URL or IP already exists and only add what is new (idempotency).  
+  
 TESTING AND VALIDATION
 -------------------------
 **VERIFYING WAF POLICY ENFORCEMENT:**
