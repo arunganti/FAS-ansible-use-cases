@@ -1,4 +1,4 @@
-Use Case Template: Replace Application Certificates
+Use Case 02: Replace Application Certificates
 ===================================================
 
 OVERVIEW
@@ -12,7 +12,7 @@ This use-case template will create a new application service (VIP) on the F5 BIG
 RUNNING THE TEMPLATE
 --------------------
 Running this template assumes that a F5 BIG-IP instance, necessary webservers and Ansible node are available.  
-To deploy a sandbox infrastructure in AWS users can use the `F5 Ansible Provisioner <https://github.com/f5alliances/f5_provisioner>`__
+To deploy a sandbox infrastructure in AWS users can use the `F5 Ansible Provisioner <https://github.com/f5devcentral/FAS-provisioner>`__
 
 1. Login to the Ansible host
    

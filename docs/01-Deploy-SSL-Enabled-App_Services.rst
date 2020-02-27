@@ -1,4 +1,4 @@
-Use-case Template: Deploy SSL enabled App-service
+Use-case 01: Deploy SSL enabled App-service
 =================================================
 
 OVERVIEW
@@ -12,7 +12,7 @@ The certificates used in this template for SSL termination are self-signed certs
 RUN THE TEMPLATE
 ----------------
 Running this template assumes that a F5 BIG-IP instance, necessary webservers and Ansible node are available.  
-To deploy a sandbox infrastructure in AWS users can use the `F5 Ansible Provisioner <https://github.com/f5alliances/f5_provisioner>`__
+To deploy a sandbox infrastructure in AWS users can use the `F5 Ansible Provisioner <https://github.com/f5devcentral/FAS-provisioner>`__
 
 1. Login to the Ansible Host
 

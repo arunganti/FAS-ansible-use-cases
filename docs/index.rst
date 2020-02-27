@@ -107,8 +107,8 @@ and we will give our best effort to address it.
    :maxdepth: 2
    :hidden:
 
-   Deploy-SSL-enabled-App-service-readme.rst
-   Certificate-replacement-readme.rst
-   F5-WAF-(XML)-Policy-Management-readme.rst
-   ltm-change-pool-member-state.rst
-   05-install-as3-readme.rst
+   01-Deploy-SSL-Enabled-App_Services.rst
+   02-Replace-Application-Certificates.rst
+   03-F5-WAF-(XML)-Policy-Management.rst
+   04-Application-Maintenance.rst
+   05-Install-and-Enable-AS3.rst

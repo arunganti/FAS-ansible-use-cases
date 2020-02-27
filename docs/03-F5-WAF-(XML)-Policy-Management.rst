@@ -1,4 +1,4 @@
-Use Case Template: F5 WAF (XML) Policy Management
+Use Case 03: F5 WAF (XML) Policy Management
 =================================================
 
 OVERVIEW
@@ -15,7 +15,7 @@ Using this playbook, other security vendors or even ticketing based solutions li
 RUNNING THE TEMPLATE
 --------------------
 Running this template assumes that a F5 BIG-IP instance, necessary webservers and Ansible node are available.  
-To deploy a sandbox infrastructure in AWS users can use the `F5 Ansible Provisioner <https://github.com/f5alliances/f5_provisioner>`__
+To deploy a sandbox infrastructure in AWS users can use the `F5 Ansible Provisioner <https://github.com/f5devcentral/FAS-provisioner>`__
 
 1. Login to the Ansible host and go to the '~/f5_ansible_use_cases/03-waf-policy-manipulation' directory
 
