@@ -21,16 +21,16 @@ To deploy a sandbox infrastructure in AWS users can use the `F5 Ansible Provisio
 
    .. code::
    
-      cd ~/FAS-ansible-use-cases/04-ltm-change-pool-member-state
+      cd ~/FAS-ansible-use-cases/04-Application-Maintenance
 
 
 3. (Optional) Edit 'f5_vars.yml' file to customize your variables for your environment. 
 
-3. Run the Ansible Playbook ‘ltm-change-pool-member-state.yaml’ with the variable file ‘f5_vars.yml’:
+3. Run the Ansible Playbook ‘Application-Maintenance.yaml’ with the variable file ‘f5_vars.yml’:
 
    .. code::
 
-      ansible-playbook ltm-change-pool-member-state.yaml -e @f5_vars.yml
+      ansible-playbook Application-Maintenance.yaml -e @f5_vars.yml
 
 .. note::
 
