@@ -30,7 +30,7 @@
       description: "HTTPS Virtual Server"
       name: "{{ F5_VIP_Name }}_https_vip"
       destination: "{{ private_ip }}"
-      port: "443"
+      port: "8083"
       pool: "{{ F5_VIP_Name }}_pool"
       snat: Automap
       profiles:
