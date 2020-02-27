@@ -3,7 +3,7 @@
 
 #Use-Case Variables
 F5_VIP_Name: Use-Case-6-VIP
-F5_VIP_Port: "8086"
+F5_VIP_Port: "8084"
 F5_Admin_Port: "8443"
 ASM_Policy_Name: "Use-Case-6-ASM"
 ASM_Policy_File: "/tmp/Use-Case-6-XML-Policy.xml"
