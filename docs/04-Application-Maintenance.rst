@@ -1,4 +1,4 @@
-Use Case Template: Application Maintenance
+Use Case 04: Application Maintenance
 ===========================================
 
 OVERVIEW
@@ -13,7 +13,7 @@ This playbook allows the ability to enable, disable or offline a specific or arr
 RUNNING THE TEMPLATE
 --------------------
 Running this template assumes that a F5 BIG-IP instance, necessary webservers and Ansible node are available.  
-To deploy a sandbox infrastructure in AWS users can use the `F5 Ansible Provisioner <https://github.com/f5alliances/f5_provisioner>`__
+To deploy a sandbox infrastructure in AWS users can use the `F5 Ansible Provisioner <https://github.com/f5devcentral/FAS-provisioner>`__
 
 1. Login to the Ansible host
 
@@ -21,16 +21,16 @@ To deploy a sandbox infrastructure in AWS users can use the `F5 Ansible Provisio
 
    .. code::
    
-      cd ~/FAS-ansible-use-cases/04-ltm-change-pool-member-state
+      cd ~/FAS-ansible-use-cases/04-Application-Maintenance
 
 
 3. (Optional) Edit 'f5_vars.yml' file to customize your variables for your environment. 
 
-3. Run the Ansible Playbook ‘ltm-change-pool-member-state.yaml’ with the variable file ‘f5_vars.yml’:
+3. Run the Ansible Playbook ‘Application-Maintenance.yaml’ with the variable file ‘f5_vars.yml’:
 
    .. code::
 
-      ansible-playbook ltm-change-pool-member-state.yaml -e @f5_vars.yml
+      ansible-playbook Application-Maintenance.yaml -e @f5_vars.yml
 
 .. note::
 

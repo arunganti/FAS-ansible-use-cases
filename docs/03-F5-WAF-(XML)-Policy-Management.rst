@@ -1,4 +1,4 @@
-Use Case Template: F5 WAF (XML) Policy Management
+Use Case 03: F5 WAF (XML) Policy Management
 =================================================
 
 OVERVIEW
@@ -15,7 +15,7 @@ Using this playbook, other security vendors or even ticketing based solutions li
 RUNNING THE TEMPLATE
 --------------------
 Running this template assumes that a F5 BIG-IP instance, necessary webservers and Ansible node are available.  
-To deploy a sandbox infrastructure in AWS users can use the `F5 Ansible Provisioner <https://github.com/f5alliances/f5_provisioner>`__
+To deploy a sandbox infrastructure in AWS users can use the `F5 Ansible Provisioner <https://github.com/f5devcentral/FAS-provisioner>`__
 
 1. Login to the Ansible host
 
@@ -23,16 +23,16 @@ To deploy a sandbox infrastructure in AWS users can use the `F5 Ansible Provisio
 
    .. code::
    
-      cd ~/FAS-ansible-use-cases/03-waf-policy-manipulation
+      cd ~/FAS-ansible-use-cases/03-F5-WAF-Policy-Management/
 
 
 3. (Optional) Edit 'f5_vars.yml' file to customize your variables. Here you can add/remove IP addresses and URLs from the 'Blocked_IPs' and 'Blocked_URLs' list
 
-4. Launch the Ansible playbook 'F5-ASM-URL-IP-Blocking.yaml' with the variable file ‘f5_vars.yml’:
+4. Launch the Ansible playbook 'F5-WAF-Policy-Management.yaml' with the variable file ‘f5_vars.yml’:
 
    .. code::
 
-      ansible-playbook F5-ASM-URL-IP-Blocking.yaml -e @f5_vars.yml
+      ansible-playbook F5-WAF-Policy-Management.yaml -e @f5_vars.yml
 
 
 This template will configure the F5 BIG-IP to provision the `WAF module <https://www.f5.com/products/security/advanced-waf>`__, create a Virtual IP (VIP) including a Pool and nodes, a WAF policy for the use case, then modify the policy to block IP’s and URL’s.
@@ -68,7 +68,3 @@ This section is optional and for testing and verification purposes only. It assu
 
 - View the deployed use case access VIP:port (8082)
 
-   
-   |
-   .. image:: images/UseCase3-960.gif
-   |

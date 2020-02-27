@@ -1,4 +1,4 @@
-Use-case Template: Deploy SSL enabled App-service
+Use-case 01: Deploy SSL enabled App-service
 =================================================
 
 OVERVIEW
@@ -12,7 +12,7 @@ The certificates used in this template for SSL termination are self-signed certs
 RUN THE TEMPLATE
 ----------------
 Running this template assumes that a F5 BIG-IP instance, necessary webservers and Ansible node are available.  
-To deploy a sandbox infrastructure in AWS users can use the `F5 Ansible Provisioner <https://github.com/f5alliances/f5_provisioner>`__
+To deploy a sandbox infrastructure in AWS users can use the `F5 Ansible Provisioner <https://github.com/f5devcentral/FAS-provisioner>`__
 
 1. Login to the Ansible Host
 
@@ -20,16 +20,16 @@ To deploy a sandbox infrastructure in AWS users can use the `F5 Ansible Provisio
 
    .. code::
    
-      cd ~/FAS-ansible-use-cases/01-deploy-redirect
+      cd ~/FAS-ansible-use-cases/01-Deploy-SSL-Enabled-App_Services/
 
 
 3. (Optional) Edit 'f5_vars.yml' file to customize the existing variables. For example: F5_VIP_Name: ‘Use-Case-1-VIP'
 
-4. Run the Ansible Playbook ‘F5-LTM-HTTP-Redirect.yml’ with the variable file ‘f5_vars.yml’:
+4. Run the Ansible Playbook ‘Deploy-SSL-Enabled-App_Services.yaml’ with the variable file ‘f5_vars.yml’:
 
    .. code::
    
-      ansible-playbook F5-LTM-HTTP-Redirect.yml -e @f5_vars.yml
+      ansible-playbook Deploy-SSL-Enabled-App_Services.yaml -e @f5_vars.yml
 
 
 In this example, the playbook looks for F5_VIP_Name: ‘Use-Case-1-VIP’ as specified in the f5_vars.yaml variable file and creates a app-service named 'Use-Case-1-VIP' with both port '80' and port '443' enabled.
@@ -59,7 +59,3 @@ This section is optional and for testing and verification purposes only. It assu
 - Ensure there are 2 VIPs with same IP
   - One listening on port 443
   - One listening on port 80
-  
-   |
-   .. image:: images/UseCase1-960.gif
-   |

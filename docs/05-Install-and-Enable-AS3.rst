@@ -5,7 +5,7 @@ Prerequisites
 -------------
 
 This usecase assumes that a F5 BIG-IP instance, webservers and Ansible node are deployed. 
-To deploy infrastructure in AWS users can use the `F5 Ansible Provisioner <https://github.com/f5devcentral/F5-Automation-Sandbox>`_
+To deploy infrastructure in AWS users can use the `F5 Ansible Provisioner <https://github.com/f5devcentral/FAS-provisioner>`_
 
 Overview of Use Case
 --------------------
@@ -29,14 +29,14 @@ Use Case Setup
 
    .. code::
    
-      cd ~/FAS-ansible-use-cases/05-install-as3
+      cd ~/FAS-ansible-use-cases/05-Install-and-Enable-AS3/
 
 
 3. Launching the Ansible Playbook:
 
    .. code::
 
-      ansible-playbook F5-Install-AS3-Package.yaml
+      ansible-playbook Install-and-Enable-AS3.yaml
 
 4. Testing and Validating
 
@@ -44,6 +44,3 @@ Use Case Setup
    - Navigate to iApps->Packet Management LX 
    - Veirfy the AS3 RPM package is installed
 
-   |
-   .. image:: images/UseCase5-960.gif
-   |
