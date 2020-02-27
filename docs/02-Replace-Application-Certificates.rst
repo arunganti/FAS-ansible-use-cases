@@ -3,7 +3,7 @@ Use Case 02: Replace Application Certificates
 
 OVERVIEW
 --------
-F5-LTM-Cert-Management-Replacement.yaml is a templated Ansible playbook that is used to demonstrate automation for managing certificates and keys used by your application services.
+Replace-Application-Certificates.yaml is a templated Ansible playbook that is used to demonstrate automation for managing certificates and keys used by your application services.
 
 Being able to create and swap SSL Profiles on a BIG-IP to singular or multiple VIPs is extremely useful, especially in today’s world where SSL keys get leaked, systems and applications get hacked, certificates become stale or expire. This automated method allows a seamless process to create and change certificates based on need/demand.
 
@@ -43,7 +43,9 @@ As Ansible automation is idempotent, the same use-case template can be used to m
 TESTING AND VALIDATION
 -----------------------
 **CERTIFICATE VERIFICATION**
-- From a client browser, access the VIP on port 8081 to view the new self-signed certificate (https://VIP:8081)
+- From a client brower, access the application through the virtual address on the F5 BIG-IP.
+- To access this site externally you will need to use the instructor inventory studentX-f5 IP Address which will be refered as (F5-BIG-IP-Public-IP) below.
+- From a client browser, access the VIP on port 8081 to view the new self-signed certificate (https://F5-BIG-IP-Public-IP:8081)
 
 **BIG-IP CONFIGURATION VERIFICATION**
 

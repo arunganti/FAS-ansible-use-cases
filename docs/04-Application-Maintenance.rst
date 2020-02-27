@@ -3,7 +3,7 @@ Use Case 04: Application Maintenance
 
 OVERVIEW
 --------
-ltm-change-pool-member-state.yaml is a template Ansible Playbook that demonstrates the ability to change the state (enable/disable/offline) of traffic flowing to web-server(s) in a load balancing pool.
+Application-Maintenance.yaml is a template Ansible Playbook that demonstrates the ability to change the state (enable/disable/offline) of traffic flowing to web-server(s) in a load balancing pool.
 
 There are times where web servers are taken offline to provide upgrades, troubleshooting, or even replacement. 
 

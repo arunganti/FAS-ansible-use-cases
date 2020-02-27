@@ -1,4 +1,4 @@
-Use Case 05: Install and enable AS3 
+Use Case 05: Install and Enable AS3 
 ===================================
 
 Prerequisites

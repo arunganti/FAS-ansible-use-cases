@@ -109,6 +109,8 @@ and we will give our best effort to address it.
 
    01-Deploy-SSL-Enabled-App_Services.rst
    02-Replace-Application-Certificates.rst
-   03-F5-WAF-(XML)-Policy-Management.rst
+   03-F5-WAF-Policy-Management.rst
    04-Application-Maintenance.rst
    05-Install-and-Enable-AS3.rst
+   06-F5-WAF-Policy-Management-Role.rst
+   07-F5-WAF-Policy-Mangement-JuiceShop-Roles.rst
