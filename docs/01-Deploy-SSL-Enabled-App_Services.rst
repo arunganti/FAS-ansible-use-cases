@@ -3,7 +3,7 @@ Use-case 01: Deploy SSL enabled App-service
 
 OVERVIEW
 --------
-F5-LTM-HTTP-Redirect.yml is a templated Ansible playbook that demonstrates configuring SSL termination and SSL re-direct for your application on F5 BIG-IP with one Ansible command. 
+Deploy-SSL-Enabled-App_Services.yaml is a templated Ansible playbook that demonstrates configuring SSL termination and SSL re-direct for your application on F5 BIG-IP with one Ansible command. 
 
 Using this template, we will create an SSL enabled (on port 443) application service (Virtual IP or VIP) on F5 BIG-IP and also create the associative Port 80 SSL redirect for that Virtual IP. If there is an already existing application service (VIP) that was previously deployed without SSL (a very common scenario), this template will also enable SSL (open SSL port) on that Virtual IP address.
 
@@ -43,8 +43,9 @@ TESTING AND VALIDATION
 **VERIFYING RE-DIRECT SERVICE:**
 
 From a client brower, access the application through the virtual address on the F5 BIG-IP.
-- If you try to access application on Virtual-IP:80 (http://VIP:80), you will be redirected to 443. 
-- The same webpage will also be accessible via VIP:443 (https://VIP:443)
+- To access this site externally you will need to use the instructor inventory studentX-f5 IP Address which will be refered as (F5-BIG-IP-Public-IP) below.
+- If you try to access application on F5-BIG-IP-Public-IP:80 (http://F5-BIG-IP-Public-IP:80), you will be redirected to 443. 
+- The same webpage will also be accessible via F5-BIG-IP-Public-IP:443 (https://F5-BIG-IP-Public-IP:443)
 
 .. note::
 
