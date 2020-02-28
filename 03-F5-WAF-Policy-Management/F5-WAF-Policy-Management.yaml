@@ -191,3 +191,9 @@
       provider: "{{provider}}"
       name: "{{ ASM_Policy_Name }}"
       active: yes
+
+#Publish ASM Policy via TMSH
+  - name: Publish ASM Policy via TMSH
+    bigip_command:
+      commands: "publish asm policy {{ASM_Policy_Name}}"
+      provider: "{{provider}}"
