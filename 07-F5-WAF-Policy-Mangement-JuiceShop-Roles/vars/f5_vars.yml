@@ -7,6 +7,7 @@ F5_VIP_Port: "8085"
 F5_Admin_Port: "8443"
 ASM_Policy_Name: "Use-Case-7-ASM"
 ASM_Policy_File: "/tmp/Use-Case-7-XML-Policy.xml"
+Block_My_IP: "yes"
 
 #Blocked URLS Tasks Variables
 Blocked_URLs:
